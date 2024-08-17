@@ -1,0 +1,49 @@
+.container {
+    justify-content: center;
+  /* display:flex;
+  flex-direction:row;
+   text-align:center;
+  */
+} 
+h1{
+  text-align:  center;
+}
+#timer{
+    text-align: center;
+}
+.navBar{
+  display: flex;
+  justify-content: space-evenly;
+ }
+.navBar a{
+  font-size: 30px;
+  color: teal;
+}
+
+.navBar a:hover{
+  font-weight: bold;
+}
+
+.waves{
+  height: 275px;
+  width: 100%;  
+  object-fit: cover;
+  padding-top: 0px;
+}
+.buttons {
+   display:flex;
+  flex-direction:row;
+  justify-content: center;
+   text-align:center;
+
+}
+#reset{
+background-color: coral;
+
+}
+#stop{
+background-color: blue;
+}
+#start{
+background-color: lightblue;
+}

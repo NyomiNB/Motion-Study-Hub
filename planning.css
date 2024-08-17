@@ -1,0 +1,36 @@
+.welcomeplan{
+  display: flex;
+  justify-content: space-around;
+  color:teal;
+}
+.introplan{
+padding-left:15%;
+padding-right:15%;
+font-size: 20px;
+  color: teal;
+}
+.navBar{
+  display: flex;
+  justify-content: space-evenly;
+  /* position: absolute;
+  top: 20px; */
+}
+
+.navBar a{
+  font-size: 30px;
+  color: teal;
+}
+
+.navBar a:hover{
+  font-weight: bold;
+}
+
+.waves{
+  height: 275px;
+  width: 100%;  
+  object-fit: cover;
+  padding-top: 0px;
+}
+.list{
+  text-align: center;
+}
