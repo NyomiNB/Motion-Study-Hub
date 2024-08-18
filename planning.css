@@ -8,7 +8,7 @@
 padding-left:15%;
 padding-right:15%;
 font-size: 20px;
-  color: teal;
+color: teal;
 }
 .navBar{
   display: flex;
@@ -32,6 +32,10 @@ font-size: 20px;
   object-fit: cover;
   padding-top: 0px;
 }
+.toDoList{
+ position: relative;
+top: -60px;
+}
 .container{
   width:100%;
   min-height: 100vh;
@@ -41,7 +45,7 @@ font-size: 20px;
 .todo-app{
   width:100%;
   max-width:540px;
-  background:#dffbfb;
+  background:#f0f9f9;
   margin: 100px auto 20px;
   padding: 10px;
   border-radius: 20px;
