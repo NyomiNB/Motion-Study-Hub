@@ -20,14 +20,17 @@
   </nav>
 <h2 class="welcomeplan">Welcome to your planning space!</h2>
   <p class="introplan">At Motion, planning your day is crucial for maintaining productivity and staying on top of tasks in both school and work. By setting clear priorities and organizing your schedule, you create a roadmap that helps you navigate your responsibilities efficiently. This structured approach minimizes procrastination, reduces stress, and ensures you allocate time for both urgent and important tasks.</p>
-  <div class="list">
-  <section class="toDoList">
-    <h3>To Do List</h3>
-    <input class="item" placeholder="Your task">
-    <button class="add">Add</button>
-    <container class="container"></container>
-  </section>
-    </div>
+   <div class="container">
+     <div class="todo-app">
+       <h2>To-Do List<img src="assets/icon.png"></h2>
+       <div class="row">
+         <input type="text" id="input-box"placeholder="Add your task">
+         <button onclick="addTask()">Add</button>
+          </div>
+       <ul id="list-container">
+       </ul>
+        </div>
+   </div>
   <script src="planning.js"></script>
     
 </body>

@@ -1,22 +1,33 @@
-var button = $('.add')
-var container = $('.toDoList')
-//event handler
- 
- 
-function addTask(event){
-  event.preventDefault()
-  var task = $(".task").val()
-  container.append(`<p>${task} <button class="delete"> Delete</button><p>`)
-  $(".task").val("")
+const inputBox = document.getElementById("input-box");
+const listContainer = document.getElementById("list-container");
+function addTask(){
+  if (inputBox.value===""){
+    alert("You must write something!");
+  } else {
+    let li= document.createElement("li");
+    li.innerHTML=inputBox.value;
+    listContainer.appendChild(li);
+    let span = document.createElement("span");
+    span.innerHTML="\u00d7";
+    li.appendChild(span);
+  } inputBox.value = "";
+  saveData();
 }
-function deleteCard(){
-  if (event.target.className === "delete"){
-    event.target.parentNode.remove()
+
+listContainer.addEventListener("click",function(e){
+  if (e.target.tagName==="LI"){
+    e.target.classList.toggle("checked");
+    saveData();
+  } else if(e.target.tagName==="SPAN"){
+    e.target.parentElement.remove();
+    saveData();
   }
+}, false);
+
+function saveData(){
+  localStorage.setItem("data",listContainer.innerHTML);
 }
-
-button.on("click", addTask)
-
-container.on("click", deleteCard)
-
- 
+function showTask(){
+  listContainer.innerHTML = localStorage.getItem("data");
+}
+showTask();

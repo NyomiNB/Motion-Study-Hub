@@ -1,7 +1,8 @@
 //POMODORO
- let interval;
-let timeLeft = 1500;
-
+let interval;
+var timeLeft = 1500;
+// var defaultTime = 1500;
+ 
 function updateTimer(){
 let minutes = Math.floor(timeLeft / 60);
   let seconds = timeLeft % 60;
@@ -10,19 +11,18 @@ let minutes = Math.floor(timeLeft / 60);
   timerE1.innerHTML = formattedTime;
 }
 
-//long break
-
-//short break
-function startTimer(){
+ // 
+ function startTimer(){
 interval = setInterval(()=>{
   timeLeft--;
   updateTimer();
-  if(timeLeft ==0){
+  if(timeLeft == 0){
+    // timeLeft = defaultTime;
+    timeLeft = 1500;
 
     clearInterval(interval);
     alert("Time's up");
-    timeLeft = 1500;
-  }
+   }
 }, 1000);
 }
 function stopTimer(){
@@ -31,9 +31,11 @@ console.log("stop");
 
 }
 function resetTimer(){
-clearInterval(interval);
-timeLeft = 1500;
- updateTimer();
+      timeLeft = 1500;
+
+      // timeLeft = defaultTime;
+clearInterval(interval); 
+  updateTimer();
   stopTimer();
 console.log("reset");
 }
@@ -42,7 +44,7 @@ const startE1 = document.getElementById("start")
 const stopE1 = document.getElementById("stop")
 const resetE1 = document.getElementById("reset")
 const timerE1 = document.getElementById("timer")
- startE1.addEventListener("click", startTimer)
-  stopE1.addEventListener("click", stopTimer)
-  resetE1.addEventListener("click", resetTimer)
+startE1.addEventListener("click", startTimer)
+stopE1.addEventListener("click", stopTimer)
+resetE1.addEventListener("click", resetTimer)
  
