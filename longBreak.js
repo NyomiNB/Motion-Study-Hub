@@ -1,7 +1,5 @@
-//POMODORO
-let interval;
-var timeLeft = 900;
-// var defaultTime = 1500;
+ let interval;
+let timeLeft = 900;
  
 function updateTimer(){
 let minutes = Math.floor(timeLeft / 60);
@@ -10,41 +8,43 @@ let minutes = Math.floor(timeLeft / 60);
 
   timerE1.innerHTML = formattedTime;
 }
-
- // 
+  
  function startTimer(){
 interval = setInterval(()=>{
   timeLeft--;
   updateTimer();
-  if(timeLeft == 0){
-    // timeLeft = defaultTime;
-    timeLeft = 900;
+  if(timeLeft ==0){
 
     clearInterval(interval);
     alert("Time's up");
-   }
+    timeLeft = 900;
+  }
 }, 1000);
+   
+  document.querySelector("#myVideo").play();
+ 
 }
 function stopTimer(){
 console.log("stop");
-      clearInterval(interval);
+ clearInterval(interval);
+  document.querySelector("#myVideo").pause();
 
 }
 function resetTimer(){
-      timeLeft = 900;
-
-      // timeLeft = defaultTime;
-clearInterval(interval); 
-  updateTimer();
+clearInterval(interval);
+timeLeft = 900;
+ updateTimer();
   stopTimer();
 console.log("reset");
 }
  
-const startE1 = document.getElementById("start")
+const startE1 = document.getElementById("start") 
 const stopE1 = document.getElementById("stop")
 const resetE1 = document.getElementById("reset")
 const timerE1 = document.getElementById("timer")
-startE1.addEventListener("click", startTimer)
-stopE1.addEventListener("click", stopTimer)
-resetE1.addEventListener("click", resetTimer)
+ startE1.addEventListener("click", startTimer)
+  stopE1.addEventListener("click", stopTimer)
+  resetE1.addEventListener("click", resetTimer)
+   
+ 
  

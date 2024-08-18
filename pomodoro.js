@@ -9,11 +9,8 @@ let minutes = Math.floor(timeLeft / 60);
 
   timerE1.innerHTML = formattedTime;
 }
- 
-//long break
-
-//short break
-function startTimer(){
+  
+ function startTimer(){
 interval = setInterval(()=>{
   timeLeft--;
   updateTimer();
@@ -30,7 +27,8 @@ interval = setInterval(()=>{
 }
 function stopTimer(){
 console.log("stop");
-      clearInterval(interval);
+ clearInterval(interval);
+  document.querySelector("#myVideo").pause();
 
 }
 function resetTimer(){

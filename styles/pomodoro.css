@@ -1,0 +1,95 @@
+.container {
+    justify-content: center;
+  /* display:flex;
+  flex-direction:row;
+   text-align:center;
+  */
+} 
+h1{
+  text-align:  center;
+}
+.options-pane{
+  display: flex;
+    flex-direction: row;
+justify-content: center;
+}
+#timer{
+    text-align: center;
+}
+.navBar{
+  display: flex;
+  justify-content: space-evenly;
+ }
+.navBar a{
+  font-size: 30px;
+  color: teal;
+}
+
+.navBar a:hover{
+  font-weight: bold;
+}
+
+.waves{
+  height: 275px;
+  width: 100%;  
+  object-fit: cover;
+  padding-top: 0px;
+}
+.buttons {
+   display:flex;
+  flex-direction:row;
+  justify-content: center;
+   text-align:center;
+
+}
+#reset{
+background-color: coral;
+
+}
+#stop{
+background-color: blue;
+}
+#start{
+background-color: lightblue;
+}
+
+#myVideo {
+  flex-display;
+   border-radius: 70%;
+  /* position: fixed; */
+  /* height: 200px; */
+  object-fit: cover;
+   width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: gray;
+  margin-right: 10px;
+justify-content: center;
+  /* min-width: 5%; 
+  min-height: 30px;*/
+   position: absolute;
+  
+ left: 600px;
+top: 320px;
+ } 
+.container {
+padding:0px;
+ left: 630px;
+top: 410px;
+position: absolute;
+ }
+.pomodoroButton{
+padding:3px;
+  border-style: solid;
+  border-radius: 5px;
+}
+.shortBreakButton{
+padding:3px;
+  border-style: solid;
+  border-radius: 5px;
+}
+.longBreakButton{
+padding:3px;
+border-style: solid;
+  border-radius: 5px;
+}

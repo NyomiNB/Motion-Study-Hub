@@ -8,3 +8,4 @@
 * Ideas on how toe overlap buttons on video: 
 - https://www.w3schools.com/css/css_positioning.asp
 - https://www.w3schools.com/cssref/css_pr_translate.php
+* Base code for to do list: https://youtu.be/G0jO8kUrg-I?si=Wj6Wapjh9_BKN7ru

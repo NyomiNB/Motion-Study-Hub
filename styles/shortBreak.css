@@ -78,9 +78,19 @@ padding:0px;
 top: 410px;
 position: absolute;
  }
-
- 
-.my-Video::-webkit-media-controls-start-playback-button {
-    display: none;
+.pomodoroButton{
+padding:3px;
+  border-style: solid;
+  border-radius: 5px;
+}
+.shortBreakButton{
+padding:3px;
+  border-style: solid;
+  border-radius: 5px;
+}
+.longBreakButton{
+padding:3px;
+border-style: solid;
+border-radius: 5px;
 }
  
