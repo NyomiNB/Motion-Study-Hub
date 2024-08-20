@@ -79,17 +79,15 @@ top: 410px;
 position: absolute;
  }
 .pomodoroButton{
-padding:3px;
-  border-style: solid;
-  border-radius: 5px;
-}
-.shortBreakButton{
-padding:3px;
-  border-style: solid;
-  border-radius: 5px;
+border: 1px solid  #187bce;
+  border-radius:  5px; 
 }
 .longBreakButton{
-padding:3px;
-border-style: solid;
-  border-radius: 5px;
+border: 1px solid  #2a9df4;
+  border-radius:  5px;'
+
+}
+ .shortButton{
+border: 1px solid  #187bce;
+  border-radius:  5px; 
 }

@@ -1,15 +1,7 @@
-html {
-  height: 100%;
-  width: 100%;
-}
-
 .navBar{
   display: flex;
   justify-content: space-evenly;
-  /* position: absolute;
-  top: 20px; */
-}
-
+ }
 .navBar a{
   font-size: 30px;
   color: teal;
