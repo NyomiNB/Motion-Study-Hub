@@ -16,7 +16,7 @@ interval = setInterval(()=>{
   if(timeLeft ==0){
 
     clearInterval(interval);
-    alert("Time's up");
+    alert("Your 15:00 minute break is up!");
     timeLeft = 900;
   }
 }, 1000);

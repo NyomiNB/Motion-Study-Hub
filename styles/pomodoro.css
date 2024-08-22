@@ -79,16 +79,31 @@ top: 410px;
 position: absolute;
  }
 .pomodoroButton{
-border: 1px solid  #2a9df4;
+  border: 1px solid  #2a9df4;
   border-radius:  5px;
-}
-.shortBreakButton{
- border: 1px solid  #187bce;
-  border-radius:  5px; 
-}
+   background-color:  #2a9df4;
+  color:white;
 }
 .longBreakButton{
 border: 1px solid  #187bce;
   border-radius:  5px; 
+     background-color:  #187bce;
+  color:white;
 }
- 
+ .shortBreak{
+border: 1px solid  #187bce;
+  border-radius:  5px; 
+     background-color:  #187bce;
+  color:white;
+ }
+.longBreakButton:hover{
+   background-color:  #94e3fe; 
+   color: #002e7a; 
+    cursor:pointer;
+    
+}
+ .shortBreak:hover{
+   background-color:  #94e3fe; 
+   color: #002e7a; 
+    cursor:pointer;
+}

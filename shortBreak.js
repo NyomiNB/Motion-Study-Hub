@@ -1,6 +1,6 @@
  let interval;
 let timeLeft = 300;
- 
+ let started = false;
 function updateTimer(){
 let minutes = Math.floor(timeLeft / 60);
   let seconds = timeLeft % 60;
@@ -8,7 +8,15 @@ let minutes = Math.floor(timeLeft / 60);
 
   timerE1.innerHTML = formattedTime;
 }
-  
+  function checkTimer(){
+started  = !started;    
+if (started){
+   start.textContent = "Stop"; 
+  startTimer();
+} else{
+stopTimer();
+}
+  }
  function startTimer(){
 interval = setInterval(()=>{
   timeLeft--;
@@ -16,7 +24,7 @@ interval = setInterval(()=>{
   if(timeLeft ==0){
 
     clearInterval(interval);
-    alert("Time's up");
+    alert("Your 5:00 minute break is over!");
     timeLeft = 300;
   }
 }, 1000);
@@ -42,7 +50,7 @@ const startE1 = document.getElementById("start")
 const stopE1 = document.getElementById("stop")
 const resetE1 = document.getElementById("reset")
 const timerE1 = document.getElementById("timer")
- startE1.addEventListener("click", startTimer)
+ startE1.addEventListener("click", checkTimer)
   stopE1.addEventListener("click", stopTimer)
   resetE1.addEventListener("click", resetTimer)
    
