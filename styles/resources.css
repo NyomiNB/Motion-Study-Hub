@@ -17,3 +17,48 @@
   object-fit: cover;
   padding-top: 0px;
 }
+
+.description{
+  font-size: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 30px;
+  color: darkturquoise;
+}
+
+.tedTalk{
+  font-size: 30px;
+  padding-left: 10%;
+  padding-top: 15px;
+  color: teal;
+}
+
+.tedTalkDescription{
+  font-size: 20px;
+  padding-left: 10%;
+  padding-right: 10%
+  padding-top: 10px;
+  color: teal;
+}
+
+.books{
+  font-size: 30px;
+  padding-left: 10%;
+  padding-top: 15px;
+  color: teal;
+}
+
+.bookDescription{
+  font-size: 20px;
+  padding-left: 10%;
+  padding-right: 10%
+  padding-top: 15px;
+  color: teal;
+}
+
+.book1{
+  font-size: 20px;
+  padding-left: 10%;
+  padding-top: 10px;
+  color: teal;
+}
