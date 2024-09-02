@@ -5,7 +5,7 @@ html {
 
 body{
   border: 10px solid turquoise;
-  height: 1200px;
+  height: 1230px;
 }
 
 .navBar{
@@ -57,7 +57,7 @@ body{
   object-fit: cover;
   position:absolute;
   left:1000px;
-  top:1100px;
+  top:1130px;
   animation: swim 10s ease infinite;
 }
 
@@ -126,4 +126,15 @@ body{
   padding-left: 10%;
   padding-top: 40px;
   color: turquoise;
+}
+
+.lightmode{
+  margin-left: 10px;
+  margin-top: 10px;
+  border: 5px,solid, turquoise;
+}
+
+.darkmode{
+  margin-left: 1030px;
+  border: 5px,solid, teal;
 }
