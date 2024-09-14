@@ -5,15 +5,33 @@ html {
 
 body{
   border: 10px solid turquoise;
-  height: 1230px;
+  height: 1410px;
 }
 
 .welcome{
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 60px;
-  font-size: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 30px;
+  font-size: 50px;
   color: teal;
+  text-align: center;
+  font-weight: bold;
+}
+
+.welcomeBlurb{
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 25px;
+  color: teal;
+}
+
+.welcomeBox{
+  background-color: #e9f1f5;
+  margin-left: 70px;
+  margin-right: 70px;
+  border-radius: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .bullet{
@@ -21,6 +39,15 @@ body{
   padding-left: 10%;
   color: teal;
 }
+
+/* .bulletedList{
+  background-color:#e7f8f9;
+  margin-left: 70px;
+  margin-right: 70px;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+} */
 
 .motto{
   text-align: center;
@@ -36,7 +63,7 @@ body{
   object-fit: cover;
   position:absolute;
   left:1000px;
-  top:1130px;
+  top:1320px;
   animation: swim 10s ease infinite;
 }
 

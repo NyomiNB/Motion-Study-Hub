@@ -3,7 +3,7 @@
 body{
 font-family: "Sail";
 border: 10px solid turquoise;
-height: 900px;
+height: 760px;
   max-width: 100%;
    overflow-x: hidden; /* Hide horizontal scrollbar */
 
@@ -42,7 +42,7 @@ z-index:5;
   min-height: 30px;*/
    position: absolute; 
  left: 10%;
-top: -170%;
+top: -300%;
  } 
 .container {
   display: flex;
@@ -76,8 +76,7 @@ border: 1px solid  #187bce;
      background-color:  #187bce;
   color:white;
   font-family: "Sail";
-  font-size: 15px;
-
+  font-size: 15px; 
 }
   .unselected:hover{
    background-color:  #94e3fe; 
@@ -106,8 +105,8 @@ border: 1px solid  #187bce;
   color:white;
   font-family: "Sail";
   font-size: 15px;
- 
 }
+
   .longBreakButton{
 border: 1px solid  #187bce;
   border-radius:  5px; 
@@ -129,7 +128,7 @@ font-family: "Sail";
  position: absolute;
   
   left: 35%;
-  top: 500%;
+  top: 300%;
 
 }
 .buttonStuff{
@@ -138,9 +137,9 @@ font-family: "Sail";
 position:relative;
   
   left: 15%;
-  top: 10%;
-  transform: translateY(42px);
-    transform: translateY(220px);
+  top: 5%;
+  /* transform: translateY(42px); */
+  transform: translateY(200px);
 
 } 
 #start:hover{
@@ -164,7 +163,7 @@ font-family: "Sail";
   font-size: 15px;
   position: absolute;
    left: 65%;
-  top: 500%;
+  top: 300%;
 }
 #reset:hover{
 border: 1px solid white;
@@ -184,18 +183,17 @@ margin: 2px;
 font-family: "Sail";
   font-size: 50px;
 left: 40%;
-  top: -100%;
+  top: -200%;
  }
 @font-face {
    font-family: "Sail", system-ui;
   font-weight: 400;
   font-style: normal;
-
  }
 #music{
  position: absolute;
 left: 40%;
-  top: 400%;
+  top: 210%;
    
 }
  

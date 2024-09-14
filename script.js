@@ -18,4 +18,4 @@ function darkfunction(){
   // text.color = "yellow";
 }
 
-    localStorage.setItem("data", );
+ 
