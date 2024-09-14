@@ -10,28 +10,12 @@ padding-right:15%;
 font-size: 20px;
 color: teal;
 }
-.navBar{
-  display: flex;
-  justify-content: space-evenly;
-  /* position: absolute;
-  top: 20px; */
+
+body{
+  border: 10px solid turquoise;
+  height: 1550px;
 }
 
-.navBar a{
-  font-size: 30px;
-  color: teal;
-}
-
-.navBar a:hover{
-  font-weight: bold;
-}
-
-.waves{
-  height: 275px;
-  width: 100%;  
-  object-fit: cover;
-  padding-top: 0px;
-}
 .toDoList{
  position: relative;
 top: -60px;
@@ -365,5 +349,5 @@ body {
 }
 .calendar{
    position: relative;
-  top: -350px;
+  top: -200px;
 }

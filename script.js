@@ -17,3 +17,5 @@ function darkfunction(){
   body.css("background" , "black")
   // text.color = "yellow";
 }
+
+    localStorage.setItem("data", );

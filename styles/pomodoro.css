@@ -1,79 +1,70 @@
-.container {
-    justify-content: center;
-  /* display:flex;
-  flex-direction:row;
-   text-align:center;
-  */
-} 
+ 
+
 body{
 font-family: "Sail";
+border: 10px solid turquoise;
+height: 900px;
+  max-width: 100%;
+   overflow-x: hidden; /* Hide horizontal scrollbar */
+
 }
+
 h1{
   text-align:  center;
 }
-.options-pane{
-  display: flex;
-    flex-direction: row;
-justify-content: center;
-}
- 
-.navBar{
-  display: flex;
-  justify-content: space-evenly;
- }
-.navBar a{
-  font-size: 30px;
-  color: teal;
-}
-
-.navBar a:hover{
-  font-weight: bold;
-}
-
-.waves{
-  height: 275px;
-  width: 100%;  
-  object-fit: cover;
-  padding-top: 0px;
-}
-.buttons {
+ .buttons {
    display:flex;
   flex-direction:row;
   justify-content: center;
    text-align:center;
-
+z-index:5; 
 }
  
 #myVideo {
-  flex-display;
-   border-radius: 70%;
+  display:flex;
+   border-radius: 10%;
+  align-items: center;
   /* position: fixed; */
   /* height: 200px; */
   object-fit: cover;
-   width: 300px;
-  height: 300px;
+   /* width: 300px;
+  height: 300px; */
+  /* width: 22%; */
+    width: 100%;
+   /* height: unset;
+   */
+  justify-content: center;
+  aspect-ratio: 1 / 1; 
   border-radius: 50%;
   background-color: gray;
   margin-right: 10px;
-justify-content: center;
-  /* min-width: 5%; 
+   /* min-width: 5%; 
   min-height: 30px;*/
    position: absolute; 
- left: 600px;
-top: 320px;
+ left: 10%;
+top: -170%;
  } 
 .container {
+  display: flex;
+  object-fit:cover;
 padding:0px;
- left: 620px;
-top: 410px;
+ left:43%;
+top: 68%;
 position: absolute;
- }
-
+ place-content: center;  
+}
   .selected { 
  border: 1px solid  #2a9df4;
   border-radius:  5px;
    background-color:  #2a9df4;
   color:white;
+    font-family: "Sail";
+  font-size: 15px; 
+}
+  .selected:hover { 
+   background-color:  #94e3fe; 
+   color: #002e7a; 
+    cursor:pointer;
     font-family: "Sail";
   font-size: 15px;
 
@@ -94,7 +85,7 @@ border: 1px solid  #187bce;
     cursor:pointer;
     font-family: "Sail";
   font-size: 15px;
-
+ 
     
 }
   .pomodoroButton { 
@@ -104,7 +95,8 @@ border: 1px solid  #187bce;
   color:white;
     font-family: "Sail";
   font-size: 15px;
-
+   left: 70%;
+  top: 300%;
 }
 
 .shortBreak {
@@ -114,7 +106,7 @@ border: 1px solid  #187bce;
   color:white;
   font-family: "Sail";
   font-size: 15px;
-
+ 
 }
   .longBreakButton{
 border: 1px solid  #187bce;
@@ -123,7 +115,8 @@ border: 1px solid  #187bce;
   color:white;
     font-family: "Sail";
   font-size: 15px;
-
+  left: 65%;
+  top: 500%;
 }
 #start{
 border: 1px solid ;
@@ -134,10 +127,22 @@ margin: 2px;
 font-family: "Sail";
   font-size: 15px;
  position: absolute;
-  left: 56px;
-  top: 130px;
+  
+  left: 35%;
+  top: 500%;
 
 }
+.buttonStuff{
+  display:flex;
+   
+position:relative;
+  
+  left: 15%;
+  top: 10%;
+  transform: translateY(42px);
+    transform: translateY(220px);
+
+} 
 #start:hover{
 border: 1px solid white;
   border-radius:  5px; 
@@ -149,7 +154,7 @@ margin: 2px;
 }
 
 #reset{
-border: 1px solid ;
+border: 1px solid;
   border-radius:  5px; 
      background-color:  #ffa57d;
   color:white;
@@ -158,9 +163,8 @@ margin: 2px;
 font-family: "Sail";
   font-size: 15px;
   position: absolute;
-  left: 153px;
-  top: 130px;
-
+   left: 65%;
+  top: 500%;
 }
 #reset:hover{
 border: 1px solid white;
@@ -179,8 +183,8 @@ margin: 2px;
     color:white;
 font-family: "Sail";
   font-size: 50px;
-left: 80px;
-  top: -13px;
+left: 40%;
+  top: -100%;
  }
 @font-face {
    font-family: "Sail", system-ui;
@@ -190,7 +194,8 @@ left: 80px;
  }
 #music{
  position: absolute;
-left: 95px;
-  top: 100px;
+left: 40%;
+  top: 400%;
    
 }
+ 

@@ -14,7 +14,7 @@ let minutes = Math.floor(timeLeft / 60);
 }
  
  
- 
+ //start timer func
  function startTimer(){
   interval = setInterval(()=>{
   timeLeft--;
@@ -31,12 +31,15 @@ let minutes = Math.floor(timeLeft / 60);
   document.querySelector("#myVideo").play();
  
 }
+//func to stop timer
 function stopTimer(){
   start.textContent ="Start";
 console.log("stop");
  clearInterval(interval);
   document.querySelector("#myVideo").pause();
 }
+
+//func to reset timer
 function resetTimer(){
   started = false;
     clearInterval(interval);
@@ -45,6 +48,7 @@ timeLeft = initialTime;
   stopTimer();
 console.log("reset");
 } 
+//func to check timer
    function checkTimer(){
 started  = !started;    
 if (started){
@@ -58,7 +62,7 @@ stopTimer();
   console.log("checktimer stop");
 }
   }
- 
+ //func to update ui for long break
    function updateInterface1(){
  resetTimer();
 
@@ -75,6 +79,7 @@ timer.textContent = "25:00";
 
 pomodoro.classList.add("selected");
     }
+ //func to update ui for short break
    function updateInterface2(){
            initialTime = 300;
     timeLeft = 300; 
@@ -92,6 +97,8 @@ resetTimer();
 pomodoro.classList.add("unselected");
 
    }
+ //func to update ui for pomoodoro
+
    function updateInterface3(){
    initialTime = 900;
     timeLeft = 900; 
@@ -130,4 +137,11 @@ const pomodoro = document.getElementById("pomodoroButton")
  
 pomodoro.classList.add("selected");
 
+//Function for music
+
+function playAudio() {
+
+audio.load()
+audio.play()
+}
  

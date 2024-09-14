@@ -6,12 +6,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width" , initial-scale=1.0">
   <title>replit</title>
   <link href="styles/pomodoro.css" rel="stylesheet" type="text/css" />
+  <link href="styles/universal.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+  <div>
+    <button class = lightmode>Light Mode</button>
+    <button class = darkmode>Dark Mode</button>
+  </div>
 
   <img class = "waves" src = "/assets/WavesHD.png">
 
@@ -22,16 +27,16 @@
   <a class = "resources" href = "resources.html">Resources</a>
   </nav>
   
-  <video loop id="myVideo">
+   <div class="container">
+
+ <video loop   id="myVideo">
   <source src="assets/ocean.mp4" type="video/mp4">
-</video> 
- <div class="container">
-<div class="options-pane">
-<button id="pomodoroButton">Pomodoro</button> 
+</video>
+     <div class="buttonStuff">
+ <button id="pomodoroButton">Pomodoro</button> 
  <button id="longBreakButton">Long Break</button>  
  <button id="shortBreak">Short Break</button> 
-</div>
-   
+     </div>
   <p class="timer" id="timer">25:00</p>
   <p class="buttons">
     <button id="start">Start</button>
@@ -39,11 +44,12 @@
  
 <select name="music" id="music">
   <option value="none">None</option>
-  <option value="Lofi-1">Lofi-1</option>
+  <option value="Hirakata Rain">Hirakata Rain</option>
   <option value="Lofi-2">Lofi-2</option>
   <option value="Lofi-3">Lofi-3</option>
 </select></div>  
   <script src="pomodoro.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

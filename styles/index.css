@@ -8,27 +8,6 @@ body{
   height: 1230px;
 }
 
-.navBar{
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.navBar a{
-  font-size: 30px;
-  color: teal;
-}
-
-.navBar a:hover{
-  font-weight: bold;
-}
-
-.waves{
-  height: 275px;
-  width: 100%;  
-  object-fit: cover;
-  padding-top: 0px;
-}
-
 .welcome{
   padding-left: 10%;
   padding-right: 10%;
@@ -128,13 +107,4 @@ body{
   color: turquoise;
 }
 
-.lightmode{
-  margin-left: 10px;
-  margin-top: 10px;
-  border: 5px,solid, turquoise;
-}
-
-.darkmode{
-  margin-left: 1030px;
-  border: 5px,solid, teal;
-}
+ 
