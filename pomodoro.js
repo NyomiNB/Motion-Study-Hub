@@ -1,4 +1,34 @@
- //POMODORO
+//Music Functions
+//Recieves user's option selection, and sends input to load audio method
+function getOption(){
+  console.log("get Option");
+ selectElement = document.querySelector('#music-selector');
+  input = selectElement.value
+  resetAudio();
+   if (input != "None"){
+  loadAudio(input); 
+ } else{
+     
+  }
+}
+//pauses all audio so that none overlap
+ function resetAudio(){
+  document.querySelector("#breezy-point").pause();
+  document.querySelector("#moonlit").pause();
+  document.querySelector("#cloud-hoodie").pause();
+ }
+//plays selected audio
+function loadAudio(currentAudio){
+  console.log("Currentaudio" + currentAudio);
+   tag = currentAudio
+    console.log("Load Audio " + tag); 
+document.getElementById(tag).load();
+ document.getElementById(tag).play();
+
+}
+ 
+//Pomodoro
+
 //initializing variables
  let interval;
 let initialTime = 1500;
@@ -53,14 +83,11 @@ console.log("reset");
 started  = !started;    
 if (started){
    start.textContent = "Stop"; 
-    console.log("checktimer stop");
-
   startTimer();
 } else{
 start.textContent = "Start"; 
 stopTimer();
-  console.log("checktimer stop");
-}
+ }
   }
  //func to update ui for long break
    function updateInterface1(){
@@ -139,9 +166,4 @@ pomodoro.classList.add("selected");
 
 //Function for music
 
-function playAudio() {
-
-audio.load()
-audio.play()
-}
  

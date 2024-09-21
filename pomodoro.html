@@ -26,11 +26,20 @@
   <a class = "pomodoro" href = "pomodoro.html">Pomodoro</a>
   <a class = "resources" href = "resources.html">Resources</a>
   </nav>
-  
+    <section class="description">
+<h1>Maximize your time with the Pomodoro Technique!</h1>
+      <h2>What is the Pomodoro Technique?</h2>
+         <p>Did you know Pomodoro is actually Itallian for "tomato"? You may be wondering, "Did a farmer develop this technique?" or maybe a chef? The Pomodoro Technique was actually a study method originating from software engineer, Francesco Crillo, during his time as a university student. Crillio was looking for a way to manage his time efficiently, and discovered this method of studying with nothing but his tomato-shaped kitchen timer, hence the name "Pomodoro". </p>
+                  <h3>How to Use the Pomodoro Technique</h3>
+   <p>It's simple really! Each task is called a "pomodoro." Each "pomodoro" gets allocated 25 minutes. After the 25 minutes is up, take a 5-minute break. You repeat this process until you have completed 4 pomodoros, or a total of an hour and twenty minutes of work time. After the fourth pomodoro, you take a longer 15-minute break and repeat the process until you've completed your tasks!</p>
+                    <h3>Helpful Hints</h3>
+ <p class = "bullets"><li class = "planning">Use the planning page to keep track of deadlines and tasks you'd like to get done!</li><li class = "breaks">Make sure to actually take a break during breaks! No working allowed!</li><li class = "hydrate">Make sure to stay hydrated and stretch in between pomodoros</li> 
+    </section>
    <div class="container">
+     
 
  <video loop   id="myVideo">
-  <source src="assets/ocean.mp4" type="video/mp4">
+  <source src="assets/Pomodoro/ocean.mp4" type="video/mp4">
 </video>
      <div class="buttonStuff">
  <button id="pomodoroButton">Pomodoro</button> 
@@ -41,12 +50,19 @@
   <p class="buttons">
     <button id="start">Start</button>
      <button id="reset">Reset</button>
- 
-<select name="music" id="music">
-  <option value="none">None</option>
-  <option value="Hirakata Rain">Hirakata Rain</option>
-  <option value="Lofi-2">Lofi-2</option>
-  <option value="Lofi-3">Lofi-3</option>
+     <audio loop id="moonlit">  
+    <source src="assets/Pomodoro/moonlit.mp3" type="audio/mpeg"></audio>
+       <audio loop id="breezy-point">  
+    <source src="assets/Pomodoro/breezyPoint.mp3" type="audio/mpeg"></audio>
+
+         <audio loop id="cloud-hoodie">  
+    <source src="assets/Pomodoro/cloudHoodie.mp3" type="audio/mpeg"></audio>
+
+<select name="music" id="music-selector" onchange="getOption()">>
+  <option value="None">None</option>
+  <option value="moonlit">Moonlit</option>
+  <option value="breezy-point">Breezy Point</option>
+  <option value="cloud-hoodie">Cloud Hoodie</option>
 </select></div>  
   <script src="pomodoro.js"></script>
   <script src="script.js"></script>
