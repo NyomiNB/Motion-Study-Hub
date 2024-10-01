@@ -134,4 +134,12 @@ body{
   color: turquoise;
 }
 
+footer{
+  text-align: center;
+  margin-top: 50px;
+  background-color: #e9f1f5;
+  border-radius: 70px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
  
