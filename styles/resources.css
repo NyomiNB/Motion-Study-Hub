@@ -1,29 +1,82 @@
+ 
+:root{
+   --body-bg: #fff;
+   --border: 10px solid turquoise;
+ --textColor:teal;
+  --toggle-color:black;
+  --bookColor: #008080; 
+  --hover: rgba(0, 128, 128, 0.2); 
+--colors :#e9f1f5;
 
-body{
-  border: 10px solid turquoise;
-  height: 2800px;
 }
+.dark_mode{
+      --body-bg: #000;
+ --border: 10px solid teal; 
+  --toggle-color:#e9f1f5;
+ --textColor:white;
+  --bookColor: #006d8f; 
+--colors :#00364a;
 
+}
+body{
+    border: var(--border);
+
+       color: var(--text-color);
+    background: var(--body-bg); 
+  height: auto;
+     overflow-x: hidden; /* Hide horizontal scrollbar */ 
+}
+/* toggle style */
+#theme_toggler{
+   position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+   outline: none; /* Remove outline */
+  background-color: var(--toggle-color); /* Set a background color */
+  color: var( --body-bg);/* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  border: 3px teal solid;
+} 
+#theme_toggler: hover{
+   position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color:var(--textColor); /* Set a background color */
+  color: var(--body-bg); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+
+ } 
+/* end of toggle style */
 .description{
   font-size: 22px;
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 30px;
-  color: darkturquoise;
+  color: var(--textColor);
   text-align: center;
 }
 
 .tedTalk{
   font-size: 30px;
   padding-top: 15px;
-  color: teal;
+  color: var(--textColor);
   text-align: center;
 }
 
 .tedTalkDescription{
   font-size: 22px;
   padding-top: 10px;
-  color: teal;
+  color: var(--textColor);
   text-align: center;
 }
 
@@ -31,7 +84,7 @@ body{
   font-size: 30px;
   padding-top: 15px;
   text-align: center;
-  color: teal;
+  color:var(--textColor);
 }
 
 .bookDescription{
@@ -39,21 +92,22 @@ body{
   text-align: center;
   padding-top: 15px;
   padding-bottom: 20px;
-  color: teal;
+  color: var(--textColor);
 }
 
 .book1{
   font-size: 20px;
   padding-left: 10%;
   padding-top: 10px;
-  color: teal;
+  color:var(--textColor);
+ 
 }
 
 .book2{
   font-size: 20px;
   padding-left: 10%;
   padding-top: 10px;
-  color: teal;
+  color: var(--textColor);
 }
 
 .inspire{
@@ -86,7 +140,7 @@ body{
 
 .video-text{
   font-size: 18px;
-  color: #008080;
+  color: var(--textColor);
 }
 
 
@@ -100,14 +154,14 @@ body{
 
 .books {
   font-size: 30px;
-  color: #008080; 
+     color: var(--textColor); 
   text-align: center;
   margin-bottom: 20px;
 }
 
 .bookDescription {
   font-size: 22px;
-  color: #004d40; 
+  color: var(--textColor); 
   text-align: center;
   margin-bottom: 30px;
   margin-top: 1px;
@@ -128,7 +182,7 @@ body{
 }
 
 .book-item:hover {
-  background-color: rgba(0, 128, 128, 0.2); 
+  background-color:var(--hover); 
   transform: scale(1.0); 
 }
 
@@ -146,11 +200,13 @@ body{
 
 .book-item span {
   font-size: 21px;
-  color: #004d40; 
+  /* color: #004d40;  */
+  color:var(--colors);
+
 }
 
 .title{
-  background-color: #e9f1f5;
+  background-color: var(--colors);
   border-radius: 20px;
 }
 
@@ -164,9 +220,20 @@ footer{
 }
 
 .top{
-  background-color: #e9f1f5;
+  background-color: var(--colors);
   padding-bottom: 10px;
   margin-left: 20px;
   margin-right: 20px;
   border-radius: 20px;
+}
+
+button{
+  border:none;
+  outline:none;
+  padding: 16px 50px;
+  background:  var(--body-bg);
+  color:  var(--textColor);
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
 }

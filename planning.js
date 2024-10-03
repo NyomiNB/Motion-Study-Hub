@@ -1,4 +1,12 @@
-const inputBox = document.getElementById("input-box");
+//start of theme funcs
+  
+window.addEventListener("storage",function(){
+retrieve_theme();
+},false);
+
+
+ //end of theme funcs
+ const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 
 function addTask() {

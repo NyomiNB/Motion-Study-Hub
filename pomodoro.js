@@ -1,3 +1,4 @@
+ 
 //Music Functions
 //Recieves user's option selection, and sends input to load audio method
 function getOption(){
@@ -11,6 +12,7 @@ function getOption(){
      
   }
 }
+
 //pauses all audio so that none overlap
  function resetAudio(){
   document.querySelector("#breezy-point").pause();
@@ -148,7 +150,11 @@ const timerE1 = document.getElementById("timer")
 const long = document.getElementById("longBreakButton")
 const short = document.getElementById("shortBreak")
 const pomodoro = document.getElementById("pomodoroButton")
- 
+
+  const hint = document.getElementById("hints") 
+  const how = document.getElementById("how-pomodoro") 
+  const what = document.getElementById("what-pomodoro") 
+
   pomodoro.addEventListener("click", updateInterface1)
  short.addEventListener("click", updateInterface2)
  long.addEventListener("click", updateInterface3)
@@ -164,6 +170,30 @@ const pomodoro = document.getElementById("pomodoroButton")
  
 pomodoro.classList.add("selected");
 
-//Function for music
+  
+//  if(document.body.classList.contains('dark_mode')){
+//        hint.classList.remove("lightPomo");
+//             how.classList.remove("lightPomo");
+//        what.classList.remove("lightPomo");
+// how.classList.add("darkPomo");
+//      what.classList.add("darkPomo");
+//      how.classList.add("darkPomo");
+//    console.log("HO");
+//  } else{
+//     console.log("HO");
 
+//        hint.classList.remove("darkPomo");
+//             how.classList.remove("darkPomo");
+//        what.classList.remove("darkPomo");
+// how.classList.add("lightPomo");
+//      what.classList.add("lightPomo");
+//      how.classList.add("lightPomo"); 
+   
+// }
+
+window.addEventListener("storage",function(){
+addTheme();
+retrieve_theme();
+},false);
+   
  

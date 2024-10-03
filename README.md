@@ -13,6 +13,8 @@
   -https://www.shecodes.io/athena/10151-how-to-change-text-when-clicking-in-javascript#
 * Base code for to do list: https://youtu.be/G0jO8kUrg-I?si=Wj6Wapjh9_BKN7ru
 * Base code for calendar:(https://www.geeksforgeeks.org/how-to-create-a-dynamic-calendar-in-html-css-javascript/)
+* Light/Dark Mode Tutorial
+  * https://dev.to/codedgar/how-to-create-a-dark-theme-system-in-5-minutes-or-less-with-vanilla-js-2922
 * Music Credits
   * Moonlit:
     * Music from #Uppbeat (free for Creators!):

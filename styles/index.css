@@ -2,10 +2,63 @@ html {
   height: 100%;
   width: 100%;
 }
+ :root{
+    --text-color: #000;
+    --body-bg: #fff;
+   --border: 10px solid turquoise;
+   --welcomeText: lightblue;
+--welcomeBlurb:lightblue;
+   --welcomeBox: #e9f1f5;
+   --bullet: lightblue;
+   --linkColor:   turquoise;
+--toggle-color:teal;
+ 
+}
+.dark_mode{
+      --body-bg: #000;
+ --border: 10px solid  teal; 
+  --toggle-color:#e9f1f5;
+    --welcomeBox: black ;
 
-body{
-  border: 10px solid turquoise;
-  height: 1410px;
+}
+/* toggle style */
+#theme_toggler{
+   position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+   outline: none; /* Remove outline */
+  background-color: var(--toggle-color); /* Set a background color */
+  color: var(--body-bg);/* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  border: 3px solid teal;
+  } 
+ 
+
+#theme_toggler: hover{
+   position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color:var(--textColor); /* Set a background color */
+  color: var(--body-bg); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+
+ } 
+ /* end of toggle style */
+ body{
+   height: 1410px;
+       border: var(--border); 
+       color: var(--text-color);
+    background: var(--body-bg); 
 }
 
 .welcome{
@@ -13,20 +66,20 @@ body{
   padding-right: 5%;
   padding-top: 30px;
   font-size: 50px;
-  color: teal;
+  color:var(--welcomeText);
   text-align: center;
   font-weight: bold;
 }
-
+ 
 .welcomeBlurb{
   padding-left: 5%;
   padding-right: 5%;
   font-size: 25px;
-  color: teal;
+  color:var(--welcomeBlurb);
 }
 
 .welcomeBox{
-  background-color: #e9f1f5;
+  background-color:var(--welcomeBox);
   margin-left: 70px;
   margin-right: 70px;
   border-radius: 20px;
@@ -37,8 +90,9 @@ body{
 .bullet{
   font-size: 20px;
   padding-left: 10%;
-  color: teal;
-}
+    color:var(--bullet);
+
+ }
 
 /* .bulletedList{
   background-color:#e7f8f9;
@@ -131,8 +185,8 @@ body{
   font-size: 30px;
   padding-left: 10%;
   padding-top: 40px;
-  color: turquoise;
-}
+  color:var(--linkColor);
+ }
 
 footer{
   text-align: center;
@@ -142,4 +196,13 @@ footer{
   padding-top: 25px;
   padding-bottom: 25px;
 }
- 
+ button{
+   border:none;
+   outline:none;
+   padding: 16px 50px;
+   background: teal;
+   color: white;
+   font-size: 16px;
+   cursor: pointer;
+   border-radius: 40px;
+ }
