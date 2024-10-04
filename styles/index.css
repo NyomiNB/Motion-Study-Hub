@@ -6,13 +6,12 @@ html {
     --text-color: #000;
     --body-bg: #fff;
    --border: 10px solid turquoise;
-   --welcomeText: lightblue;
---welcomeBlurb:lightblue;
+   --welcomeText:    teal;
+--welcomeBlurb:   teal;
    --welcomeBox: #e9f1f5;
-   --bullet: lightblue;
-   --linkColor:   turquoise;
---toggle-color:teal;
- 
+   --bullet:   teal;
+   --linkColor:   #000;
+--toggle-color:teal; 
 }
 .dark_mode{
       --body-bg: #000;

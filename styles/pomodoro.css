@@ -17,13 +17,13 @@ html {
   }
 .dark_mode{
       --body-bg: #000;
+    --hover-text:teal;
  --border: 10px solid teal; 
   --textColor: white;
   --hover-bg:lightblue;
     --bg-color:#00364a;
 --footer-color:white;
-   --footer-visited:#008cb4;
-
+   --footer-visited:#008cb4; 
 --toggle-color:#e9f1f5;
 
 }
@@ -154,20 +154,20 @@ text-align: center;
   }
   .planning:hover{
 transform: scale(1.02);
-color:var(hover-text);
+color:var(--hover-text);
   }
     .breaks:hover{
 transform: scale(1.02);
-color:var(hover-text);
+color:var(--hover-text);
   }
   
   .hydrate:hover{
 transform: scale(1.02);
-color:var(hover-text);
+color:var(--hover-text);
   }
 
   h2{
-       border-radius: 20%; 
+       border-radius: 50%; 
       font: "Lucida Console";
 justify-content: center;
     align-content: center;
@@ -182,18 +182,20 @@ justify-content: center;
   grid-row: 2/3;  
     border-radius: 15%;
       font-family: 'Lucida Console', "Courier New", monospace;
-  background-color:var(--bg-color);
+   background-color: var(--bg-color);
 
   
  }
  .how:hover{
   background-color: var(hover-bg);
   transform: scale(1.0); 
+  background-color: var(--hover-bg);
 
  }
    .what:hover{
   background-color: var(hover-bg); 
   transform: scale(1.0); 
+  background-color: var(--hover-bg);
 
  }
 
@@ -201,9 +203,8 @@ justify-content: center;
    grid-column: 1 / 2;
   grid-row: 2 / 3;   
      font-family: 'Lucida Console', "Courier New", monospace;
-  background-color: #e9f1f5;
-  
-      border-radius: 15%;
+   
+      border-radius: 50%;
 
   background-color:var(--bg-color);
 
@@ -230,6 +231,8 @@ background: url('/assets/coastal.jpg') no-repeat center center/cover;
     font-weight: bold;
  text-align: center;
 }
+ 
+
 /* .breaks { */
    /* list-style-image: url("https://www.tutorialspoint.com/static/images/cyber-security.svg");
 } */

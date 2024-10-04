@@ -10,8 +10,7 @@
       --body-bg: #000;
  --border: 10px solid  teal; 
   --toggle-color:black;
- --textColor:white;
-
+ --textColor:white; 
 }
 body{
     border: var(--border);

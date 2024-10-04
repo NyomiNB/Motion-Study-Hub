@@ -21,7 +21,13 @@ function retrieve_theme(){
   var theme = localStorage.getItem('website_theme');
   if(theme != null){
  document.body.classList.remove('default', 'dark_mode'); document.body.classList.add(theme);
+if (theme == "dark_mode") {
+  document.getElementById("theme_toggler").innerHTML = "Light Mode";
+} else{
+    document.getElementById("theme_toggler").innerHTML = "Dark Mode";
+
   }
+}
 }
 
 retrieve_theme();
